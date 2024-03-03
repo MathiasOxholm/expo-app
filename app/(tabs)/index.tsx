@@ -7,8 +7,8 @@ export default function TabOneScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>Novicell Expo Demo</Text>
       <Text style={styles.subtitle}>A quick demo app built in Expo / React native. That features tabs, modal and some data fetching.</Text>
-      <TouchableOpacity onPress={() => alert('Hello from Novicell!')} style={styles.button}> 
-        <Text>Press me!</Text>
+      <TouchableOpacity style={styles.button}> 
+        <Text>This is a button</Text>
       </TouchableOpacity>
     </View>
   );
@@ -19,7 +19,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingHorizontal: 20
+    paddingHorizontal: 20,
+    paddingVertical: 40
   },
   title: {
     fontSize: 20,
@@ -35,6 +36,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     padding: 10,
     backgroundColor: Colors.dark.tint,
-    borderRadius: 5
+    borderRadius: 5,
+    marginBottom: 20
   }
 });
